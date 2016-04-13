@@ -16,6 +16,10 @@ if [ $# -eq 2 ]; then
   file="$2"
 fi
 
+temp="${file%\"}"
+temp="${temp#\"}"
+file=$temp
+
 if [ "$1" = "backup" ]; then
   /root/bin/backup.sh backup "$file"
   s3cmd --access_key="$ACCESS_KEY" --secret_key="$SECRET_KEY" \
