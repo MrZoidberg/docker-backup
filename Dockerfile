@@ -1,7 +1,7 @@
 # http://docs.docker.com/reference/builder
 # docker backup image (boombatower/docker-backup).
 
-FROM debian:jessie
+FROM boombatower/opensuse
 MAINTAINER Jimmy Berry <jimmy@boombatower.com>
 
 RUN zypper refresh && \
