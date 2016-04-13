@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build --force-rm -t boombatower/docker-backup .
+docker build --force-rm -t mikhailmerkulov/docker-backup .
